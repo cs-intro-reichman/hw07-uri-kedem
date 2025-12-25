@@ -11,8 +11,8 @@ public class IntToBin {
      * and 1's.
      */
     public static String toBinary(int x) {
-        if (x == 0) {
-            return "";
+        if (x <= 1) {
+            return Integer.toString(x);
         } else if (x % 2 == 0) {
             return toBinary((int) (x / 2)) + "0";
         } else {
